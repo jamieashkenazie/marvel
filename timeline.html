@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marvel Mania </title>
+<link rel="style" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body style = "background-color:lightblue ;">
+<img src="marvel.jpg"  alt="HTML5 Icon" width="250" height="40">
+<font size = "10" color ="red"> <strong>MANIA</strong> </font>
+<div class="navbar">
+  <a href="file:///Users/student/Desktop/marvel/marvel.html">Home</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="timeline.html">Timeline</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Trailers
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="https://www.youtube.com/watch?v=ATpJBunjGJg">Avengers: Infinity War</a>
+      <a href="https://www.youtube.com/watch?v=8_rTIAOohas">Ant-Man and the Wasp</a>
+      <a href="https://www.youtube.com/watch?v=xjDjIWPwcPU">Black Panther</a>
+      <a href="https://www.youtube.com/watch?v=duGqrYw4usE">Guardians of the Galaxy Vol. 2</a>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<body background = "universe2.jpg">
+<font size = "5" color = red> Here's a quick refresher of the MCU timeline.
+  After over 20 movies AND TV series, the order and phases can get a little confusing!
+</br>
+Don't forget, all the MCU movies are connected, so make sure to watch them in order!</br>
+<font size = "6" color = yellow> PHASE ONE:</br>
+  <font size = "5" color = white>-Iron Man (2008)</br>
+  -The Incredible Hulk (2008)</br>
+  -Iron Man 2 (2010)</br>
+  -Thor (2011)</br>
+  -Captain America: The First Avenger (2011)</br>
+  -Marvel's The Avengers (2012)</br>
+<font size = "6" color = yellow> PHASE TWO:</br>
+  <font size = "5" color = white>-Iron Man 3 (2013)</br>
+  -Thor: The Dark World (2013)</br>
+  -Captain America: The Winter Soldier (2014)</br>
+  -Guardians of the Galaxy (2014)</br>
+  -Avengers: Age of Ultron (2015)</br>
+  -Ant-Man (2015)</br>
+<font size = "6" color = yellow> PHASE THREE:</br>
+  <font size = "5" color = white>-Captain America: Civil War (2016)</br>
+-Doctor Strange (2016)</br>
+-Guardians of the Galaxy Vol. 2 (2017)</br>
+-Spider-Man: Homecoming (2017)</br>
+-Thor: Ragnarok (2017)</br>
+-Black Panther (2018)</br>
+-Avengers: Infinity War (2018)</br>
+-Ant-Man and the Wasp (2018)</br>
